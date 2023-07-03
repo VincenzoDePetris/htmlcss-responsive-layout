@@ -124,6 +124,12 @@ img {
   margin: 2rem 0;
 }
 
+.card {
+  height: 300px;
+  background-color: blue;
+  margin: 1rem;
+}
+
 /* ABOUT US SECTION */
 
 .about-us {
@@ -211,6 +217,15 @@ img {
   .about-img img {
     max-width: 200px;
   }
+
+  .mazzo {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .working .card {
+    width: calc(100% / 2 - 2rem);
+  }
 }
 
 /* FULL DESKTOP */
@@ -224,6 +239,11 @@ img {
   .planning {
     display: flex;
     justify-content: space-between;
+  }
+
+  .row .col .card:first-child {
+    display: flex;
+    justify-content: space-around;
   }
 
   .planning-text {
@@ -241,5 +261,9 @@ img {
 
   .planning-img h2 {
     margin: 1rem;
+  }
+
+  .working .card {
+    width: calc(100% / 3 - 2rem);
   }
 }
