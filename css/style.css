@@ -13,11 +13,28 @@ img {
   max-width: 100%;
 }
 
+.section {
+  margin: 3rem 0;
+}
+
 /* 
 ##################
 #      UTILS     #
 ##################
 */
+
+#bg-pink {
+  background-color: violet;
+}
+
+#gray-bg {
+  background-color: gray;
+}
+
+.black-bg {
+  background-color: black;
+  color: white;
+}
 
 /* 
 ##################
@@ -54,7 +71,6 @@ img {
 /* planning section */
 
 .planning {
-  background-color: violet;
   min-height: 500px;
   margin-top: 4rem;
   padding: 1rem;
@@ -98,7 +114,6 @@ img {
   text-align: center;
   padding: 1rem;
   margin-bottom: 3rem;
-  background-color: gray;
 }
 
 .working > .card {
@@ -107,6 +122,55 @@ img {
   background-color: rgb(17, 0, 255);
   border-radius: 50px;
   margin: 2rem 0;
+}
+
+/* ABOUT US SECTION */
+
+.about-us {
+  margin: 0 1rem;
+  line-height: 2rem;
+}
+
+.about-us img {
+  border-radius: 50%;
+  width: 50%;
+}
+
+/* FOOTER */
+
+.footer-div {
+  max-width: 500px;
+  margin: auto;
+  padding: 2rem 1rem;
+  text-align: center;
+  color: white;
+}
+
+.footer-div ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-div li {
+  margin: 0 1rem;
+}
+
+.footer-div li > a {
+  color: white;
+}
+
+/* SECOND PART FOOTER */
+
+.lorem {
+  max-width: 500px;
+  margin: auto;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.lorem p:first-child {
+  margin-bottom: 4rem;
 }
 
 /* 
@@ -130,11 +194,33 @@ img {
   .row .col:first-child {
     width: calc(100% / 3 * 2 - 2rem);
   }
+
+  .about-us {
+    display: flex;
+  }
+
+  .about-text {
+    width: 50%;
+  }
+
+  .about-img {
+    width: 50%;
+    padding-left: 3rem;
+  }
+
+  .about-img img {
+    max-width: 200px;
+  }
 }
 
 /* FULL DESKTOP */
 
 @media screen and (min-width: 992px) {
+  .section > div {
+    max-width: 1200px;
+    margin: auto;
+  }
+
   .planning {
     display: flex;
     justify-content: space-between;
