@@ -1,0 +1,159 @@
+/* 
+##################
+#    GENERAL     #
+##################
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* 
+##################
+#      UTILS     #
+##################
+*/
+
+/* 
+##################
+#    SECTION     #
+##################
+*/
+
+/* Header */
+
+#header {
+  height: 80px;
+  background-color: red;
+}
+
+.h-section {
+  display: flex;
+  justify-content: space-between;
+  line-height: 80px;
+  padding: 0 1rem;
+}
+
+/* Start section */
+
+.row {
+  width: 100%;
+}
+
+.col {
+  background-color: blue;
+  min-height: 200px;
+  margin: 1rem;
+}
+
+/* planning section */
+
+.planning {
+  background-color: violet;
+  min-height: 500px;
+  margin-top: 4rem;
+  padding: 1rem;
+  color: white;
+  line-height: 2rem;
+  font-size: 1.3rem;
+}
+
+.planning-img {
+  margin: 0 3rem auto;
+  padding: 2rem;
+  background-color: white;
+  color: black;
+  border-radius: 50px;
+  line-height: 1.3rem;
+}
+
+.planning h2 {
+  margin: 2rem 0;
+}
+
+/* testimonial */
+
+.testimonials {
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 3rem;
+}
+
+.testimonials > .card {
+  min-height: 200px;
+  width: 100%;
+  background-color: red;
+  border-radius: 50px;
+  margin: 2rem 0;
+}
+
+/* working section */
+
+.working {
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 3rem;
+  background-color: gray;
+}
+
+.working > .card {
+  min-height: 200px;
+  width: 100%;
+  background-color: rgb(17, 0, 255);
+  border-radius: 50px;
+  margin: 2rem 0;
+}
+
+/* 
+##################
+#   RESPONSIVE   #
+##################
+*/
+
+/* TABLET */
+
+@media screen and (min-width: 576px) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .row > .col {
+    width: calc(100% / 3 - 2rem);
+  }
+
+  .row .col:first-child {
+    width: calc(100% / 3 * 2 - 2rem);
+  }
+}
+
+/* FULL DESKTOP */
+
+@media screen and (min-width: 992px) {
+  .planning {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .planning-text {
+    width: 50%;
+  }
+
+  .planning-img {
+    width: 30%;
+    font-size: 1rem;
+    padding: 1rem;
+    margin-bottom: 0;
+    margin-top: 10rem;
+    text-align: center;
+  }
+
+  .planning-img h2 {
+    margin: 1rem;
+  }
+}
