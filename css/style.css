@@ -13,10 +13,6 @@ img {
   max-width: 100%;
 }
 
-.section {
-  margin: 3rem 0;
-}
-
 /* 
 ##################
 #      UTILS     #
@@ -49,11 +45,45 @@ img {
   background-color: red;
 }
 
+.ul-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-bars {
+  color: white;
+}
+
+.ul-menu li {
+  list-style: none;
+  margin: 1.5rem;
+}
+
+.ul-menu li a {
+  text-decoration: none;
+  color: white;
+}
+
+.ul-menu li:last-child {
+  background-color: white;
+  border-radius: 25px;
+  padding: 5px 10px;
+}
+
+#last-link {
+  color: black;
+}
+
 .h-section {
   display: flex;
   justify-content: space-between;
-  line-height: 80px;
+  align-items: center;
+  height: 80px;
   padding: 0 1rem;
+}
+
+.link-menu {
+  display: none;
 }
 
 /* Start section */
@@ -64,14 +94,14 @@ img {
 
 .col {
   background-color: blue;
-  min-height: 200px;
+
   margin: 1rem;
+  border-radius: 20px;
 }
 
 /* planning section */
 
 .planning {
-  min-height: 500px;
   margin-top: 4rem;
   padding: 1rem;
   color: white;
@@ -79,8 +109,13 @@ img {
   font-size: 1.3rem;
 }
 
+.planning-text {
+  display: flex;
+  flex-direction: column;
+}
+
 .planning-img {
-  margin: 0 3rem auto;
+  text-align: center;
   padding: 2rem;
   background-color: white;
   color: black;
@@ -92,6 +127,15 @@ img {
   margin: 2rem 0;
 }
 
+.arrow {
+  display: inline-block;
+  background-color: purple;
+  margin-top: 1rem;
+  padding: 1rem 1.2rem;
+  border-radius: 50%;
+  font-size: 1.2rem;
+}
+
 /* testimonial */
 
 .testimonials {
@@ -101,11 +145,24 @@ img {
 }
 
 .testimonials > .card {
-  min-height: 200px;
   width: 100%;
   background-color: red;
   border-radius: 50px;
   margin: 2rem 0;
+}
+
+.img-testimonials {
+  object-fit: cover;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  padding: 1rem 2rem;
+}
+
+.text-testimonials {
+  height: 50%;
+  font-size: 1.3rem;
+  padding: 1rem 1.5rem;
 }
 
 /* working section */
@@ -124,32 +181,66 @@ img {
   margin: 2rem 0;
 }
 
-.card {
-  height: 300px;
+.mazzo .card {
   background-color: blue;
   margin: 1rem;
+  text-align: start;
+  padding: 1.5rem;
+  border-radius: 25px;
+}
+
+.mazzo .card button {
+  font-size: 1.2rem;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  margin: 1rem 0;
+}
+
+.number {
+  font-size: 3rem;
+  margin: 1.5rem 0;
 }
 
 /* ABOUT US SECTION */
 
 .about-us {
-  margin: 0 1rem;
+  margin: 2rem;
   line-height: 2rem;
 }
 
 .about-us img {
+  margin: 2rem 0;
   border-radius: 50%;
   width: 50%;
+}
+
+.about-img p {
+  font-size: 1.5rem;
+  color: violet;
+  font-weight: bolder;
+}
+
+.about-img button {
+  border: none;
+  padding: 0.5rem 1rem;
+  background-color: violet;
+  border-radius: 25px;
 }
 
 /* FOOTER */
 
 .footer-div {
-  max-width: 500px;
   margin: auto;
   padding: 2rem 1rem;
   text-align: center;
   color: white;
+}
+
+.footer-div p:last-of-type {
+  max-width: 500px;
+  margin: auto;
+  margin-bottom: 1.5rem;
 }
 
 .footer-div ul {
@@ -169,14 +260,14 @@ img {
 /* SECOND PART FOOTER */
 
 .lorem {
-  max-width: 500px;
-  margin: auto;
-  padding: 2rem 1rem;
   text-align: center;
+  padding: 2rem 1rem;
 }
 
 .lorem p:first-child {
-  margin-bottom: 4rem;
+  max-width: 350px;
+  margin: auto;
+  padding: 2rem 1rem;
 }
 
 /* 
@@ -231,6 +322,14 @@ img {
 /* FULL DESKTOP */
 
 @media screen and (min-width: 992px) {
+  .bars-menu {
+    display: none;
+  }
+
+  .link-menu {
+    display: block;
+  }
+
   .section > div {
     max-width: 1200px;
     margin: auto;
@@ -265,5 +364,10 @@ img {
 
   .working .card {
     width: calc(100% / 3 - 2rem);
+  }
+
+  .about-us {
+    padding: 0 2rem;
+    line-height: 2rem;
   }
 }
