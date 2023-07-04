@@ -20,7 +20,7 @@ img {
 */
 
 #bg-pink {
-  background-color: violet;
+  background-color: #9792e4;
 }
 
 #gray-bg {
@@ -28,7 +28,7 @@ img {
 }
 
 .black-bg {
-  background-color: black;
+  background-color: #333333;
   color: white;
 }
 
@@ -42,7 +42,7 @@ img {
 
 #header {
   height: 80px;
-  background-color: red;
+  background-color: #178ffd;
 }
 
 .ul-menu {
@@ -88,15 +88,53 @@ img {
 
 /* Start section */
 
+.start {
+  text-align: center;
+  color: #444;
+}
+
+.text-start {
+  text-align: start;
+  padding: 2rem;
+}
+
+.text-start button {
+  margin: 2rem 0;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #178ffd;
+  border: none;
+  border-radius: 50px;
+}
+
 .row {
   width: 100%;
 }
 
 .col {
-  background-color: blue;
+  background-color: #b5ddff;
 
   margin: 1rem;
   border-radius: 20px;
+}
+
+.phone-image {
+  width: 80%;
+}
+
+.image-p {
+  font-size: 5rem;
+  margin: 1rem;
+  color: #178ffd;
+}
+
+.start .card {
+  padding: 0 1rem;
+}
+
+.card-down {
+  padding-bottom: 2rem;
 }
 
 /* planning section */
@@ -129,7 +167,7 @@ img {
 
 .arrow {
   display: inline-block;
-  background-color: purple;
+  background-color: #9792e4;
   margin-top: 1rem;
   padding: 1rem 1.2rem;
   border-radius: 50%;
@@ -144,11 +182,16 @@ img {
   margin-bottom: 3rem;
 }
 
+.testimonials > h1 {
+  color: #9792e4;
+}
+
 .testimonials > .card {
   width: 100%;
-  background-color: red;
+  background-color: #9792e4;
   border-radius: 50px;
   margin: 2rem 0;
+  color: whitesmoke;
 }
 
 .img-testimonials {
@@ -176,17 +219,18 @@ img {
 .working > .card {
   min-height: 200px;
   width: 100%;
-  background-color: rgb(17, 0, 255);
+
   border-radius: 50px;
   margin: 2rem 0;
 }
 
 .mazzo .card {
-  background-color: blue;
+  background-color: white;
   margin: 1rem;
   text-align: start;
   padding: 1.5rem;
   border-radius: 25px;
+  color: #444;
 }
 
 .mazzo .card button {
@@ -195,11 +239,18 @@ img {
   padding: 0.5rem 1rem;
   border-radius: 25px;
   margin: 1rem 0;
+  background-color: #9792e4;
+  color: whitesmoke;
+}
+
+.working h2 {
+  color: #9792e4;
 }
 
 .number {
   font-size: 3rem;
   margin: 1.5rem 0;
+  color: #9792e4;
 }
 
 /* ABOUT US SECTION */
@@ -207,6 +258,10 @@ img {
 .about-us {
   margin: 2rem;
   line-height: 2rem;
+}
+
+.about-text h1 {
+  color: #9792e4;
 }
 
 .about-us img {
@@ -217,14 +272,14 @@ img {
 
 .about-img p {
   font-size: 1.5rem;
-  color: violet;
+  color: #9792e4;
   font-weight: bolder;
 }
 
 .about-img button {
   border: none;
   padding: 0.5rem 1rem;
-  background-color: violet;
+  background-color: #9792e4;
   border-radius: 25px;
 }
 
@@ -309,13 +364,38 @@ img {
     max-width: 200px;
   }
 
+  .testimonials .card {
+    display: flex;
+    align-items: center;
+    text-align: start;
+  }
+
+  .text-testimonials {
+    padding: 2rem;
+  }
+
+  .img-testimonials {
+    height: 190px;
+    width: 600px;
+    padding: 1rem;
+  }
+
   .mazzo {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .working .card {
-    width: calc(100% / 2 - 2rem);
+    width: calc(100% / 2 - 5rem);
+  }
+}
+
+@media screen and (min-width: 705px) {
+  .img-testimonials {
+    height: 200px;
+    width: 460px;
+    padding: 1rem;
   }
 }
 
@@ -335,9 +415,26 @@ img {
     margin: auto;
   }
 
+  .text-start {
+    width: 60%;
+  }
+
+  .image-start {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
   .planning {
     display: flex;
     justify-content: space-between;
+  }
+
+  .img-testimonials {
+    height: 250px;
+    width: 350px;
+    padding: 1rem;
   }
 
   .row .col .card:first-child {
@@ -363,7 +460,7 @@ img {
   }
 
   .working .card {
-    width: calc(100% / 3 - 2rem);
+    width: calc(100% / 3 - 5rem);
   }
 
   .about-us {
